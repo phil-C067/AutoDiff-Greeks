@@ -61,9 +61,9 @@ Reverse mode is particularly useful when a function has many inputs but a single
 
 The project applies the autodiff implementations to the Black–Scholes European call option:
 
-\[
+$$
 C = S\Phi(d_1) - Ke^{-rT}\Phi(d_2)
-\]
+$$
 
 where
 

@@ -67,17 +67,17 @@ $$
 
 where
 
-\[
+$$
 d_1 =
 \frac{\ln(S/K)+(r+\frac{1}{2}\sigma^2)T}
 {\sigma\sqrt{T}}
-\]
+$$
 
 and
 
-\[
+$$
 d_2=d_1-\sigma\sqrt{T}.
-\]
+$$
 
 The following sensitivities are calculated using automatic differentiation:
 
@@ -96,16 +96,16 @@ Nested dual numbers are used to calculate higher-order derivatives.
 
 For example:
 
-\[
+$$
 \Gamma = \frac{\partial^2 C}{\partial S^2}
-\]
+$$
 
 and
 
-\[
+$$
 \text{Speed} =
 \frac{\partial^3 C}{\partial S^3}.
-\]
+$$
 
 This demonstrates how the same automatic differentiation framework can be extended beyond first-order derivatives.
 
@@ -162,7 +162,4 @@ For the Black–Scholes example, reverse mode can calculate sensitivities with r
 quant-project-3-autodiff-greeks/
 ├── README.md
 ├── autodiff_greeks.ipynb
-├── src/
-│   └── autodiff.py
-├── requirements.txt
 └── .gitignore
